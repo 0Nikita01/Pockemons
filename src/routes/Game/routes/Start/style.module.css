@@ -1,0 +1,64 @@
+.flex {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 40px;
+    grid-template-rows: auto auto;
+  }
+
+.button {
+  width: 100%;
+  padding: 2rem;
+}
+
+.button > button {
+  display: block;
+  width: 200px;
+  border-radius: 10px;
+  margin : 0 auto;
+  color: white;
+  background-color: rgb(231, 62, 166);
+  outline: none;
+}
+
+.card {
+  width: 100%;
+  height: 380px;
+  cursor: pointer;
+
+}
+
+@media screen and (min-width: 1600px) {
+
+.flex {
+  grid-template-columns: repeat(5, auto);
+}
+
+}
+
+@media screen and (max-width: 1200px) {
+  .flex {
+    grid-template-columns: repeat(3, auto);
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .flex {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .flex {
+    grid-template-columns: repeat(2, auto);
+    margin: 0 auto;
+    grid-column-gap: 25px;
+  }
+
+
+}
+
+@media screen and (max-width: 500px) {
+  .flex {
+    grid-template-columns: repeat(1, auto);
+  }
+}
